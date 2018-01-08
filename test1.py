@@ -5,6 +5,7 @@ import json
 import Adafruit_DHT
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
+GPIO.setup(26,GPIO.IN)
 sensor_args = { '11': Adafruit_DHT.DHT11,
                 '22': Adafruit_DHT.DHT22,
                 '2302': Adafruit_DHT.AM2302 }
